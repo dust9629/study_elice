@@ -1,0 +1,45 @@
+## NPM
+npm init
+-> 프로젝트 디렉터리를 생성하고 해당 디렉터리 내에서 npm init 작성시
+  package.json 파일 생성 => Node.js 프로젝트가 됨
+
+package.json
+-> 프로젝트 관련 정보들이 저장되는 파일
+-> 해당 파일을 직접 수정하거나 npm 명령어를 사용하여 프로젝트 정보를 수정할 수 있음
+
+npm install
+-> 프로젝트 의존성을 관리할 수 잇음
+-> 의존성 추가, 내려받기, 개발용 의존성 추가, 전역 패키지 추가
+
+npm install [package-name] --save-dev
+-> 개발용 의존성을 분리하여 관리할 수 있음
+-> 개발용 의존성 = 배포 전까지만 사용하는 의존성
+-> package.json의 devDependencies에 추가됨
+
+npm install --production
+-> 프로젝트를 배포할 때에는 개발용 의존성을 같이 포함할 필요가 없기 때문에 package.json의 dependencies만 node_modules에 내려받음
+
+npm install [package-name]@[version]
+-> 해당 버전 패키지 설치 가능
+
+package-lock.json
+-> 프로젝트에 의존성을 추가하면 자동으로 최신버전 추가 되는데 설치된 버전을 고정하는 역할을 함
+
+npm install [package-name] --global
+-> 패키지를 전역 패키지 디렉터리에 내려받음
+-> 주로 커맨드 라인 도구들
+
+프로젝트 의존성이 package.json내에 명시적으로 선언되어있는 것이 프로젝트 관리의 좋은 방향
+
+npm remove [package-name]
+-> 의존성 패키지 삭제
+-> package.json의 dependencies와 devDependencies에서 삭제
+-> node_modules에서도 삭제
+
+npm run script
+-> script 실행
+
+npm test -> 코드 유닛 테스트에 사용
+npm start -> 프로젝트 실행
+npm stop -> 프로젝트 종료
+

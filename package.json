@@ -1,0 +1,11 @@
+{
+  "name": "study_elice",
+  "version": "1.0.0",
+  "description": "### 수강목록 #### 1. 웹 프로그래밍 #### 2. 자바스크립트_01 #### 3. 자바스크립트_02 #### 4. 비동기 프로그래밍 #### 5. Node.j, 타입스크립트 #### 6. 백엔드 기초 #### 7. 데이터 베이스 연동 #### 8. 리액트 기초 #### 9. 리액트 심화 #### 10. 상태 관리 #### 11. CSS 전처리기",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
